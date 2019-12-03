@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 DNA=./dnaNode
 CONFIG=./config.json
