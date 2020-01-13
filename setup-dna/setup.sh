@@ -11,6 +11,7 @@ if [ ! -f $CONFIG ]; then
 fi
 
 # create did
+# 1 here is the default passwd, change 1 to the passwd you want
 out=`$DNA account add --did -d -w did.dat <<EOF
 1
 1
@@ -20,9 +21,10 @@ did=`echo $out | awk '{for (i=1; i<NF; i++) print $i}' | grep 'did:dna:'`
 sed "s/^.*admin_ont_id.*$/\"admin_ont_id\":\"$did\",/" $CONFIG > $CONFIG.tmp
 
 # create wallets
-for i in {1..4}
+for i in {1..7}
 do
 mkdir node$i
+# 1 here is the default passwd, change 1 to the passwd you want
 out=`$DNA account add -d -w node$i/wallet.dat <<EOF
 1
 1
@@ -34,7 +36,7 @@ mv $CONFIG.tmp2 $CONFIG.tmp
 done
 
 # update config
-for i in {1..4}
+for i in {1..7}
 do
 cp $CONFIG.tmp node$i/config.json
 cp $DNA node$i/dnaNode

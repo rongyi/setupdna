@@ -1,16 +1,19 @@
 {
   "SeedList": [
-    "127.0.0.1:20338",
-    "127.0.0.01:20438",
-    "127.0.0.01:20538",
-    "127.0.0.01:20638"
+    "172.168.3.44:20338",
+    "172.168.3.45:20338",
+    "172.168.3.45:30338",
+    "172.168.3.46:20338",
+    "172.168.3.46:30338",
+    "172.168.3.47:20338",
+    "172.168.3.47:30338"
   ],
   "ConsensusType":"vbft",
   "VBFT":{
-    "n":40,
-    "c":1,
-    "k":4,
-    "l":64,
+    "n":7,
+    "c":2,
+    "k":7,
+    "l":112,
     "block_msg_delay":10000,
     "hash_msg_delay":10000,
     "peer_handshake_timeout":10,
@@ -31,6 +34,15 @@
       },
       {
         "index":4, "peerPubkey":"035998e70d829eea58998ec743113cf778f66932a063efc1a0a0496717c4a0d93d", "address":"AemhQtcPTGegSk1UAsiLnePVcut1MLXSPg", "initPos":10000
+      },
+      {
+        "index":5, "peerPubkey":"035998e70d829eea58998ec743113cf778f66932a063efc1a0a0496717c4a0d93d", "address":"AemhQtcPTGegSk1UAsiLnePVcut1MLXSPg", "initPos":10000
+      },
+      {
+        "index":6, "peerPubkey":"035998e70d829eea58998ec743113cf778f66932a063efc1a0a0496717c4a0d93d", "address":"AemhQtcPTGegSk1UAsiLnePVcut1MLXSPg", "initPos":10000
+      },
+      {
+        "index":7, "peerPubkey":"035998e70d829eea58998ec743113cf778f66932a063efc1a0a0496717c4a0d93d", "address":"AemhQtcPTGegSk1UAsiLnePVcut1MLXSPg", "initPos":10000
       }
     ]
   }
